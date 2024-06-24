@@ -1,4 +1,6 @@
 {
+  "name": "ProjectCrimeWorld",
+  "dockerFile": "Dockerfile",
   "image": "mcr.microsoft.com/devcontainers/cpp:0-ubuntu-20.04",
   "settings": {
     "terminal.integrated.defaultProfile.linux": "bash"
