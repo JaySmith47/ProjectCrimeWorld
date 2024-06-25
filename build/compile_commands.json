@@ -1,0 +1,49 @@
+[
+{
+  "directory": "/workspaces/ProjectCrimeWorld/build",
+  "command": "/usr/bin/c++  -DPLATFORM_WEB -DWEBGL -I../raylib/src  -g   -std=gnu++17 -o CMakeFiles/ProjectCrimeWorld.dir/main.cpp.o -c /workspaces/ProjectCrimeWorld/main.cpp",
+  "file": "/workspaces/ProjectCrimeWorld/main.cpp"
+},
+
+{
+  "directory": "/workspaces/ProjectCrimeWorld/build",
+  "command": "/usr/bin/cc -DPLATFORM_WEB -DWEBGL -I../raylib/src  -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g   -std=gnu99 -o raylib/raylib/CMakeFiles/raylib.dir/rcore.c.o   -c /workspaces/ProjectCrimeWorld/raylib/src/rcore.c",
+  "file": "/workspaces/ProjectCrimeWorld/raylib/src/rcore.c"
+},
+
+{
+  "directory": "/workspaces/ProjectCrimeWorld/build",
+  "command": "/usr/bin/cc -DPLATFORM_WEB -DWEBGL -I../raylib/src  -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g   -std=gnu99 -o raylib/raylib/CMakeFiles/raylib.dir/rmodels.c.o   -c /workspaces/ProjectCrimeWorld/raylib/src/rmodels.c",
+  "file": "/workspaces/ProjectCrimeWorld/raylib/src/rmodels.c"
+},
+
+{
+  "directory": "/workspaces/ProjectCrimeWorld/build",
+  "command": "/usr/bin/cc -DPLATFORM_WEB -DWEBGL -I../raylib/src  -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g   -std=gnu99 -o raylib/raylib/CMakeFiles/raylib.dir/rshapes.c.o   -c /workspaces/ProjectCrimeWorld/raylib/src/rshapes.c",
+  "file": "/workspaces/ProjectCrimeWorld/raylib/src/rshapes.c"
+},
+
+{
+  "directory": "/workspaces/ProjectCrimeWorld/build",
+  "command": "/usr/bin/cc -DPLATFORM_WEB -DWEBGL -I../raylib/src  -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g   -std=gnu99 -o raylib/raylib/CMakeFiles/raylib.dir/rtext.c.o   -c /workspaces/ProjectCrimeWorld/raylib/src/rtext.c",
+  "file": "/workspaces/ProjectCrimeWorld/raylib/src/rtext.c"
+},
+
+{
+  "directory": "/workspaces/ProjectCrimeWorld/build",
+  "command": "/usr/bin/cc -DPLATFORM_WEB -DWEBGL -I../raylib/src  -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g   -std=gnu99 -o raylib/raylib/CMakeFiles/raylib.dir/rtextures.c.o   -c /workspaces/ProjectCrimeWorld/raylib/src/rtextures.c",
+  "file": "/workspaces/ProjectCrimeWorld/raylib/src/rtextures.c"
+},
+
+{
+  "directory": "/workspaces/ProjectCrimeWorld/build",
+  "command": "/usr/bin/cc -DPLATFORM_WEB -DWEBGL -I../raylib/src  -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g   -std=gnu99 -o raylib/raylib/CMakeFiles/raylib.dir/utils.c.o   -c /workspaces/ProjectCrimeWorld/raylib/src/utils.c",
+  "file": "/workspaces/ProjectCrimeWorld/raylib/src/utils.c"
+},
+
+{
+  "directory": "/workspaces/ProjectCrimeWorld/build",
+  "command": "/usr/bin/cc -DPLATFORM_WEB -DWEBGL -I../raylib/src  -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g   -std=gnu99 -o raylib/raylib/CMakeFiles/raylib.dir/raudio.c.o   -c /workspaces/ProjectCrimeWorld/raylib/src/raudio.c",
+  "file": "/workspaces/ProjectCrimeWorld/raylib/src/raudio.c"
+}
+]

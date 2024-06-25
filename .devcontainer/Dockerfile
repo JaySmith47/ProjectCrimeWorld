@@ -15,7 +15,8 @@ RUN apt-get update && \
     libxxf86vm-dev \
     libasound2-dev \
     libpulse-dev \
-    libudev-dev
+    libudev-dev \
+    libxkbcommon-dev  # Add this line to install xkbcommon
 
 # Install emscripten
 RUN git clone https://github.com/emscripten-core/emsdk.git /emsdk && \
@@ -28,14 +29,6 @@ RUN git clone https://github.com/emscripten-core/emsdk.git /emsdk && \
 RUN git clone https://github.com/raysan5/raylib.git /raylib && \
     mkdir -p /raylib/build && \
     cd /raylib/build && \
-    cmake .. && \
-    make && \
-    make install
-
-# Install nbnet
-RUN git clone https://github.com/nbsdx/nbnet.git /nbnet && \
-    mkdir -p /nbnet/build && \
-    cd /nbnet/build && \
     cmake .. && \
     make && \
     make install
