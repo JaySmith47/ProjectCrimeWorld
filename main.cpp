@@ -2,42 +2,35 @@
 
 int main() {
     // Initialization
-    //--------------------------------------------------------------------------------------
     const int screenWidth = 800;
     const int screenHeight = 450;
 
-    InitWindow(screenWidth, screenHeight, "Raylib - Red Square Example");
+    InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
 
-    // Define the position and size of the red square
-    Rectangle redSquare = { screenWidth / 2 - 50, screenHeight / 2 - 50, 100, 100 };
+    Shader shader = LoadShader("shaders/vertex_shader.glsl", "shaders/fragment_shader.glsl");
 
-    SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
-    //--------------------------------------------------------------------------------------
+    // Check if the shader loaded correctly
+    if (shader.id == 0) {
+        TraceLog(LOG_ERROR, "Failed to load shader!");
+        return -1; // Exit if shader failed to load
+    }
 
     // Main game loop
-    while (!WindowShouldClose())    // Detect window close button or ESC key
-    {
-        // Update
-        //----------------------------------------------------------------------------------
-        // No updates required for this simple example
-        //----------------------------------------------------------------------------------
-
-        // Draw
-        //----------------------------------------------------------------------------------
+    while (!WindowShouldClose()) {
         BeginDrawing();
+        ClearBackground(RAYWHITE);
 
-            ClearBackground(RAYWHITE);
-
-            DrawRectangleRec(redSquare, RED);
+        BeginShaderMode(shader);
+        // Draw your objects here
+        DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
+        EndShaderMode();
 
         EndDrawing();
-        //----------------------------------------------------------------------------------
     }
 
     // De-Initialization
-    //--------------------------------------------------------------------------------------
-    CloseWindow();        // Close window and OpenGL context
-    //--------------------------------------------------------------------------------------
+    UnloadShader(shader);
+    CloseWindow();
 
     return 0;
 }
